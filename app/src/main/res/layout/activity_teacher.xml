@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#ffffff"
+    tools:context=".TeacherActivity">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="Username"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="Official Email"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/aadharNumber"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="164dp"
+        android:autofillHints="Enter OTP"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/facultyID"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="Enter OTP"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="username(ID)"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#5AA65A"
+        android:text="Log In"
+        android:textColorHighlight="#C63939"
+        android:textColorLink="#D45353"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aadharNumber"
+        app:layout_constraintVertical_bias="0.364" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

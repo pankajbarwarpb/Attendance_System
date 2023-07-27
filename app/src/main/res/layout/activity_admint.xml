@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="61dp"
+        android:autofillHints="Enter OTP"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminUserName" />
+
+    <EditText
+        android:id="@+id/adminUserName"
+        android:layout_width="252dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="Username"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adminLoginButton"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="248dp"
+        android:backgroundTint="#5AA65A"
+        android:text="Log In"
+        android:textColorHighlight="#C63939"
+        android:textColorLink="#D45353"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
+</androidx.constraintlayout.widget.ConstraintLayout>

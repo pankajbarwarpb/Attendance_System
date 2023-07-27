@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="136dp"
+        android:autofillHints="Email ID"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rollnumber"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="Username"
+        android:background="#A6DFDA"
+        android:ems="10"
+        android:hint="Roll Number"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/emailID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailID"
+        app:layout_constraintTop_toBottomOf="@+id/emailID" />
+
+    <Button
+        android:id="@+id/signupbutton01"
+        android:layout_width="128dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#5AA65A"
+        android:text="Sign In"
+        android:textColorHighlight="#C63939"
+        android:textColorLink="#D45353"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/rollnumber"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/rollnumber"
+        app:layout_constraintTop_toBottomOf="@+id/rollnumber" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">project01</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="name">Name</string>
+    <string name="username_hint" />
+    <string name="username_description" />
+    <string name="username_content_description" />
+    <string name="course_name">Course Name</string>
+    <string name="course_code">Course Code</string>
+    <string name="batch_e_g_2020">Batch (e.g. 2020)</string>
+    <string name="course_credit">Course Credit</string>
+    <string name="course_session_e_g_jan_2023_june_2023">Course Session (e.g. Jan 2023 - June 2023)</string>
+    <string name="branch">Branch</string>
+    <string name="add_course">Add Course</string>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="month_prompt">Select a Month</string>
+
+    <string-array name="years">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <!-- add more years as needed -->
+    </string-array>
+    <string name="year_prompt">Select a Year</string>
+    <string name="username">UserName</string>
+    <string name="select">Select</string>
+    <string name="rollnumber">RollNumber</string>
+
+
+</resources>

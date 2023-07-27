@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCoursesForFaculty">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Add Course For Faculty"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/facultyemailId3"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Faculty ID:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/facultyemailId4"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Course Code:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId3"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId3" />
+
+    <TextView
+        android:id="@+id/facultyemailId5"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Course Name:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId4"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId4" />
+
+    <TextView
+        android:id="@+id/facultyemailId6"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Batch:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId4"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId7" />
+
+    <TextView
+        android:id="@+id/facultyemailId8"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Year:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId4"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId7" />
+
+    <TextView
+        android:id="@+id/facultyemailId16"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Credit:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId4"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId8" />
+
+    <TextView
+        android:id="@+id/facultyemailId7"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Branch:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId4"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId5" />
+
+    <EditText
+        android:id="@+id/addFacultyID"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/addCourseCode"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId4"
+        app:layout_constraintEnd_toEndOf="@+id/addFacultyID" />
+
+    <EditText
+        android:id="@+id/addYear"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId8"
+        app:layout_constraintEnd_toEndOf="@+id/addBatch" />
+
+    <EditText
+        android:id="@+id/courseCredit"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId16"
+        app:layout_constraintEnd_toEndOf="@+id/addBatch" />
+
+    <EditText
+        android:id="@+id/addBatch"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId6"
+        app:layout_constraintEnd_toEndOf="@+id/addBranchName" />
+
+    <EditText
+        android:id="@+id/addBranchName"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId7"
+        app:layout_constraintEnd_toEndOf="@+id/addCourseName" />
+
+    <EditText
+        android:id="@+id/addCourseName"
+        android:layout_width="215dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId5"
+        app:layout_constraintEnd_toEndOf="@+id/addCourseCode" />
+
+    <Button
+        android:id="@+id/addCourseForFaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#37B639"
+        android:text="Add Course"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseCredit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

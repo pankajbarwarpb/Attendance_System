@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".StudentDetails">
+
+    <TextView
+        android:id="@+id/coursename"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:background="#dbb8e3"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="course_name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/month_spinner"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/spinner_border"
+        android:entries="@array/months"
+        android:prompt="@string/month_prompt"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/year_spinner"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coursename" />
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/spinner_border"
+        android:entries="@array/years"
+        android:textColor="@android:color/black"
+        android:prompt="@string/year_prompt"
+        app:layout_constraintBottom_toBottomOf="@+id/month_spinner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="378dp"
+        android:layout_height="432dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/scroll_view_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/month_spinner"
+        app:layout_constraintVertical_bias="0.36">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/month_spinner"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TableLayout
+                android:id="@+id/tablelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:stretchColumns="*"
+                android:textColor="@android:color/black">
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/takeAttendance"
+        android:layout_width="173dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:text="Take Attendance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

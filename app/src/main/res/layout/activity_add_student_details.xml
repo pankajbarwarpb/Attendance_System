@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentDetails">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Student Details"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/facultyemailId2"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="156dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Roll Number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/name2"
+        app:layout_constraintTop_toBottomOf="@+id/name2" />
+
+    <TextView
+        android:id="@+id/text23"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Branch"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/test232"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Batch"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text23"
+        app:layout_constraintTop_toBottomOf="@+id/text23" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Email"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/text23"
+        app:layout_constraintTop_toBottomOf="@+id/test232" />
+
+    <EditText
+        android:id="@+id/studentRollNumber"
+        android:layout_width="218dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facultyemailId2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="BT Address"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facultyemailId2"
+        app:layout_constraintTop_toBottomOf="@+id/facultyemailId2" />
+
+    <EditText
+        android:id="@+id/studentBluetoothAddress"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name2"
+        app:layout_constraintEnd_toEndOf="@+id/studentRollNumber" />
+
+    <EditText
+        android:id="@+id/stbtaddr"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/name2"
+        app:layout_constraintEnd_toEndOf="@+id/studentRollNumber" />
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="@+id/studentBluetoothAddress" />
+
+    <EditText
+        android:id="@+id/studentBranch"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text23"
+        app:layout_constraintEnd_toEndOf="@+id/studentRollNumber" />
+
+    <EditText
+        android:id="@+id/studentBatch"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test232"
+        app:layout_constraintEnd_toEndOf="@+id/studentRollNumber" />
+
+    <EditText
+        android:id="@+id/studentEmail"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test"
+        app:layout_constraintEnd_toEndOf="@+id/studentRollNumber" />
+
+    <Button
+        android:id="@+id/addStudentDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4B8F61"
+        android:text="Verify Student"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#B93A3A"
+    tools:context=".StudentTakingAttendance">
+
+    <TextView
+        android:id="@+id/coursename4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:background="#dbb8e3"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="course_name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Current Date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coursename4" />
+
+    <Button
+        android:id="@+id/captureImage"
+        android:layout_width="158dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#170E8B"
+        android:onClick="takeImage"
+        android:text="Capture"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/markingAttendance"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/markingAttendance"
+        android:layout_width="158dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#170E8B"
+        android:text="Mark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/captureImage" />
+
+    <ImageView
+        android:id="@+id/demoImage1"
+        android:layout_width="200dp"
+        android:layout_height="232dp"
+        app:layout_constraintBottom_toTopOf="@+id/captureImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate2"
+        app:layout_constraintVertical_bias="0.118"
+        app:srcCompat="@drawable/facescan" />
+
+    <ImageView
+        android:id="@+id/demoImage2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/demoImage1"
+        app:layout_constraintTop_toBottomOf="@+id/demoImage1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Your dimension values go here -->
+    <!-- Default margin size -->
+    <dimen name="text_view_margin">16dp</dimen>
+    <dimen name="text_view_padding_left">20dp</dimen>
+    <!-- Margin size for large screens -->
+    <dimen name="text_view_margin_large">24dp</dimen>
+
+</resources>

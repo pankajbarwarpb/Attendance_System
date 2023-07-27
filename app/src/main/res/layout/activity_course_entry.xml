@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <!-- Name -->
+
+  <!-- Code -->
+
+  <TextView
+      android:id="@+id/code"
+      android:layout_width="60dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="26dp"
+      android:layout_marginBottom="20dp"
+      android:gravity="center_vertical"
+      android:padding="5dp"
+      android:text="Code:"
+      android:textAlignment="center"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/credit"
+      app:layout_constraintEnd_toStartOf="@+id/entercode"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/name"
+      tools:ignore="RtlCompat" />
+
+  <TextView
+      android:id="@+id/credit"
+      android:layout_width="70dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="26dp"
+      android:gravity="center_vertical"
+      android:padding="5dp"
+      android:text="Credit:"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toStartOf="@+id/entercredit"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/code" />
+
+  <TextView
+      android:id="@+id/Branch"
+      android:layout_width="80dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="26dp"
+      android:gravity="center_vertical"
+      android:padding="5dp"
+      android:text="Branch:"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toStartOf="@+id/enterbranch"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/credit" />
+
+  <TextView
+      android:id="@+id/Batch"
+      android:layout_width="70dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="26dp"
+      android:gravity="center_vertical"
+      android:padding="5dp"
+      android:text="Batch:"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toStartOf="@+id/enterbatch"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/Branch" />
+
+  <TextView
+      android:id="@+id/year"
+      android:layout_width="70dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="26dp"
+      android:gravity="center_vertical"
+      android:padding="5dp"
+      android:text="Year:"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toStartOf="@+id/enteryear"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/Batch" />
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="60dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="32dp"
+      android:gravity="center_vertical"
+      android:text="Name:"
+      android:textStyle="bold"
+      android:padding="5dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.044"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Credit -->
+
+  <!-- Batch -->
+
+  <!-- Branch -->
+
+  <!-- Year -->
+
+  <!-- Submit Button -->
+
+  <EditText
+      android:id="@+id/entername"
+      android:layout_width="293dp"
+      android:layout_height="39dp"
+      android:layout_marginEnd="28dp"
+      android:ems="10"
+      android:hint="Enter Name"
+      android:inputType="text"
+      android:padding="5dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@id/name" />
+
+  <EditText
+      android:id="@+id/entercredit"
+      android:layout_width="293dp"
+      android:layout_height="39dp"
+      android:ems="10"
+      android:hint="Enter Credit"
+      android:inputType="number"
+      app:layout_constraintEnd_toEndOf="@+id/entercode"
+      app:layout_constraintTop_toTopOf="@+id/credit" />
+
+  <EditText
+      android:id="@+id/enterbranch"
+      android:layout_width="293dp"
+      android:layout_height="39dp"
+      android:ems="10"
+      android:hint="Enter Branch"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="@+id/entercredit"
+      app:layout_constraintTop_toTopOf="@+id/Branch" />
+
+  <EditText
+      android:id="@+id/enterbatch"
+      android:layout_width="293dp"
+      android:layout_height="39dp"
+      android:ems="10"
+      android:hint="Enter Batch"
+      android:inputType="number"
+      app:layout_constraintEnd_toEndOf="@+id/enterbranch"
+      app:layout_constraintTop_toTopOf="@+id/Batch" />
+
+  <EditText
+      android:id="@+id/enteryear"
+      android:layout_width="293dp"
+      android:layout_height="39dp"
+      android:ems="10"
+      android:hint="Enter Year"
+      android:inputType="number"
+      app:layout_constraintEnd_toEndOf="@+id/enterbatch"
+      app:layout_constraintTop_toTopOf="@+id/year" />
+
+  <EditText
+      android:id="@+id/entercode"
+      android:layout_width="293dp"
+      android:layout_height="39dp"
+      android:ems="10"
+      android:hint="Enter Code"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="@+id/entername"
+      app:layout_constraintTop_toTopOf="@+id/code" />
+
+  <Button
+      android:id="@+id/submit_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#97CB0A"
+      android:text="Add"
+      app:layout_constraintEnd_toEndOf="@+id/enteryear"
+      app:layout_constraintTop_toTopOf="@+id/cancel_button" />
+
+  <!-- Cancel Button -->
+  <Button
+      android:id="@+id/cancel_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="188dp"
+      android:height="20dp"
+      android:backgroundTint="#CF8282"
+      android:text="Cancel"
+      app:layout_constraintStart_toStartOf="@+id/year"
+      app:layout_constraintTop_toBottomOf="@+id/year" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
